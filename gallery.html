@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        .container {
+            display : grid;
+            border : 3px solid;
+            padding: 5px;
+            grid-gap : 0.5rem;
+            grid-template-columns : repeat(3, 4fr);
+            grid-template-rows: 15em;
+        }
+        img {
+            height:100% ;
+            width : 100% ;
+        }
+        #img_first {
+          grid-row : 1 / 1.5;
+           grid-column : 1/3;
+        }
+        #img_third {
+           grid-row : 2 / 4;
+        }
+        #img_fourth {
+            grid-row : 2 / 3;
+        }
+        #img_fifth {
+            grid-row : 2 / 4;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <img id="img_first" 
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs4ScV1x8_HO04KbD04gMXDM7OspclqSRpKw&s">
+    <img id="img_second"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTozB3bNGl24uyQhZXzqMvKZy3lUARm2txsdw&s">
+    <img id="img_third"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0wI8i8KbpMTmaOIEYXgnVWmGTw9-YW4C3yw&s">
+    <img id="img_fourth"
+                     src="https://images.stockcake.com/public/d/a/8/da8d8eb4-9192-424d-98c8-434a0038daef_large/spices-in-bottles-stockcake.jpg">
+    <img id="img_fifth"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXX5wJOf1Lz2dc3dUWFrlT5O1lSHYTgC8_7Q&s">
+    <img id="img_sixth" 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmk0HObhQrg-fp6wE8Ld7wapziG1RB4zwcNg&s">
+   </div> 
+</body>
+</html>
